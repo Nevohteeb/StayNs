@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* CSS Variables */
+:root {
+  --primary-color: #c0a47a;
+  --secondary-color: #1f1f1f;
+  --background-color: #0c0c0c;
+  --primary-text: white;
+  --secondary-text: white;
+}
+
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-weight: 300;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/bg.webp');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 30px;
+  min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+  color: var(--primary-text);
+  padding: 0px 30px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100 !important;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.126);
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+header nav a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+  color: var(--primary-text);
+  scale: 1.1;
+  transition: all 0.2s ease;
+}
+
+/* Footer Styles */
+footer {
+  backdrop-filter: blur(10px);
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  color: var(--primary-color);
+}
+
+/* Form Styling */
+form {
+  margin-top: 10px;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.505);
+  border-radius: 8px;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+select,
+input {
+  width: 240px;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid var(--primary-color);
+  background-color: var(--background-color);
+  color: var(--primary-text);
+}
+
+label {
+  font-size: 16px;
+  color: var(--primary-text);
+}
+
+button {
+  margin: 10px;
+  width: 240px;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: var(--primary-text);
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+/* Results */
+.back-button {
+  position: fixed;
+  top: 100px;
+  left: 30px;
+  color: var(--primary-text);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 10;
+  border-radius: 8px;
+  padding: 4px 8px;
+  background-color: var(--primary-color);
+}
+
+.back-button:hover {
+  color: var(--primary-color);
+  background-color: var(--primary-text);
+  scale: 1.1;
+  transition: all 0.2s ease;
+}
+
+#results {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 30px 30px;
+}
+
+/* Property */
+.property {
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.426);
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.property img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.property-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--primary-text);
+  margin-top: 20px;
+  text-align: center;
+}
+
+.property h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.property p {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+.property .read-more {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: var(--primary-text);
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.2 ease;
+}
+
+.property .read-more:hover {
+  background-color: var(--primary-text);
+  color: var(--primary-color);
+  scale: 1.1;
+  transition: all 0.2 ease;
+}
+
+.property p:nth-child(2) {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.property p:nth-child(5) {
+  margin-top: 10px;
+}
+
+/* Single Property Details */
+.single-container {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.426);
+  border-radius: 8px;
+  border: 1px solid var(--primary-color);
+}
+
+.single-image {
+  width: 50%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.single-property-details {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: var(--primary-text);
+}
+
+.location-text {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.single-property-ammenities {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  gap: 20px
+}
+
+.single-property-ammenities p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.single-property-ammenities i {
+  color: var(--primary-color);
+}
+
+.sub-title {
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.single-property-ammenities p {
+  font-size: 1.125em;
+  font-weight: 300;
+}
+
+/* Media Querries */
+@media screen and (max-width: 1200px) {
+  #results {
+    grid-template-columns: repeat(3, 1fr);
+}
+}
+
+@media screen and (max-width: 992px) {
+
+    #results {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .property {
+        display: flex;
+        width: 100%;
+    }
+
+    .property img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .property-details {
+        height: 100%;
+        width: 50%;
+    }
+
+    .single-container {
+      flex-direction: column;
+    }
+
+    .single-image {
+      width: 100%;
+      height: 300px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #results {
+      grid-template-columns: 1fr;
+    }
+    .property {
+        flex-direction: column;
+    }
+
+    .property img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .property-details {
+        height: 50%;
+        width: 100%;
+    }
+}
+
