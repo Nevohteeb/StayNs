@@ -349,6 +349,10 @@ button {
     align-items: flex-start;
   }
 
+  .home-info h1 {
+    font-size: 3em;
+  }
+
     #results {
         grid-template-columns: repeat(2, 1fr);
     }
