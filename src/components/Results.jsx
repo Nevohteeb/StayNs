@@ -13,7 +13,6 @@ const Results = () => {
       try {
         const response = await axios.get('/Properties.json');
         const fetchedProperties = response.data;
-        console.log('Fetched data:', fetchedProperties);  // Debug log
 
         // Filter the properties based on the formData criteria
         const filteredProperties = fetchedProperties.filter(property => {
@@ -71,7 +70,7 @@ const Results = () => {
             </div>
           ))
         ) : (
-          <p>No Results found</p>
+          <p id="no-results">No Results found<br></br>Please try again</p>
         )}
       </div>
     </>

@@ -9,6 +9,27 @@
   --secondary-text: white;
 }
 
+/* Target the scrollbar on WebKit (Safari, Chrome, Opera) */
+::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+}
+
+/* Track (the area on which the scrollbar is rendered) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the track */
+}
+
+/* Handle (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color); /* Color of the handle */
+  border-radius: 5px; /* Rounded corners on the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker color when hovering */
+}
+
 /* Reset some basic styles */
 * {
   margin: 0;
@@ -23,7 +44,7 @@ p {
 body {
   font-family: "Lato", sans-serif;
   line-height: 1.6;
-  min-height: 100dvh;
+  height: 100dvh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('../images/bg.webp');
   background-position: center;
   background-size: cover;
@@ -35,6 +56,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 120px 30px;
+  min-height: 100dvh;
 }
 
 /* Header Styles */
@@ -184,6 +206,12 @@ button {
   transition: all 0.2 ease;
 }
 
+button:hover {
+  color: var(--primary-color);
+  background-color: var(--primary-text);
+  transition: all 0.2s ease;
+}
+
 /* Results */
 .back-button {
   position: fixed;
@@ -206,12 +234,20 @@ button {
 }
 
 #results {
-  height: 100%;
-  width: 100%;
+  width: 100vw;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   padding: 30px 30px;
+}
+
+#no-results {
+  color: var(--primary-text);
+  font-weight: 400;
+  font-size: 20px;
+  position: fixed;
+  top: 25%;
+  left: 30px;
 }
 
 /* Property */
