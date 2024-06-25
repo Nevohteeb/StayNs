@@ -37,6 +37,7 @@ const SingleProperty = () => {
         <div className='single-container'>
             <img src={property.image} alt="" className='single-image' />
             <div className="single-property-details">
+                <p id="enquire"><i class="fa-solid fa-envelope"></i> Enquire Now</p>
                 <h1>{property.name}</h1>
                 <p className='location-text'>{property.location}</p>
                 <p className='sub-title'>${property.price.toFixed(2)} NZD per night</p>

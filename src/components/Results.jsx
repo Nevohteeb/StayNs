@@ -17,8 +17,12 @@ const Results = () => {
         // Filter the properties based on the formData criteria
         const filteredProperties = fetchedProperties.filter(property => {
           const matchesLocation = !formData.location || formData.location.trim() === "" || property.location.toLowerCase().includes(formData.location.toLowerCase());
-          const matchesBedrooms = formData.bedrooms ? property.bedrooms === parseInt(formData.bedrooms) : true;
-          const matchesBathrooms = formData.bathrooms ? property.bathrooms === parseInt(formData.bathrooms) : true;
+
+          // Check if property has at least the number of bedrooms specified in formData
+          const matchesBedrooms = !formData.bedrooms || parseInt(property.bedrooms) >= parseInt(formData.bedrooms);
+
+          // Check if property has at least the number of bathrooms specified in formData
+          const matchesBathrooms = !formData.bathrooms || parseInt(property.bathrooms) >= parseInt(formData.bathrooms);
 
           let matchesStayDuration = true;
           if (formData.startDate && formData.endDate) {
@@ -39,7 +43,7 @@ const Results = () => {
     };
 
     fetchData();
-  }, [formData]);
+  }, [formData]); // Dependency on formData ensures useEffect runs when formData changes
 
   const handleBackButton = () => {
     navigate(-1);
@@ -54,7 +58,7 @@ const Results = () => {
     <>
       <p className='back-button' onClick={handleBackButton}><i className="fa-solid fa-arrow-left"></i> Back</p>
       <div id="results">
-        {(properties) && properties.length > 0 ? (
+        {properties.length > 0 ? (
           properties.map((property, index) => (
             <div className="property" key={index}>
               <img src={property.image} alt={property.name}/>

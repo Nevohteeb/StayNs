@@ -46,18 +46,14 @@ const SearchForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
     console.log(formData);
-    // Navigate to /result and pass formData as state
     navigate('/results', { state: { formData } });
   };
 
-  // Extract unique locations from properties data and sort them alphabetically
   const uniqueLocations = [...new Set(properties.map(property => property.location))].sort();
 
   return (
     <form className="filter-container" onSubmit={handleSubmit}>
-      {/* <!-- Location Filter --> */}
       <div className="filter">
         <label htmlFor="location">Location</label>
         <select
@@ -67,7 +63,6 @@ const SearchForm = () => {
           value={formData.location}
           onChange={handleChange}
         >
-          {/* Add options for location here */}
           <option value="">Any</option>
           {uniqueLocations.map((location, index) => (
             <option key={index} value={location}>{location}</option>
@@ -75,7 +70,6 @@ const SearchForm = () => {
         </select>
       </div>
 
-      {/* <!-- Bedrooms --> */}
       <div className="filter">
         <label htmlFor="bedrooms">Bedrooms Min:</label>
         <select
@@ -95,7 +89,6 @@ const SearchForm = () => {
         </select>
       </div>
 
-      {/* <!-- Bathrooms --> */}
       <div className="filter">
         <label htmlFor="bathrooms">Bathrooms Min.:</label>
         <select
@@ -113,7 +106,6 @@ const SearchForm = () => {
         </select>
       </div>
 
-      {/* <!-- Start Date --> */}
       <div className="filter">
         <label htmlFor="startDate">Start Date:</label>
         <DatePicker
@@ -126,7 +118,6 @@ const SearchForm = () => {
         />
       </div>
 
-      {/* <!-- End Date --> */}
       <div className="filter">
         <label htmlFor="endDate">End Date:</label>
         <DatePicker
