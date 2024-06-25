@@ -162,6 +162,7 @@ input {
   border: 2px solid var(--primary-color);
   background-color: var(--background-color);
   color: var(--primary-text);
+  font-size: 16px;
 }
 
 label {
