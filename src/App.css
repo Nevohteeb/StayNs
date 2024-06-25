@@ -23,7 +23,7 @@ p {
 body {
   font-family: "Lato", sans-serif;
   line-height: 1.6;
-  min-height: 100vh;
+  min-height: 100dvh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('../images/bg.webp');
   background-position: center;
   background-size: cover;
@@ -35,7 +35,6 @@ body {
   justify-content: center;
   align-items: center;
   padding: 120px 30px;
-  min-height: 100vh;
 }
 
 /* Header Styles */
@@ -255,16 +254,6 @@ button {
   font-size: 16px;
   font-weight: 300;
   margin-bottom: 5px;
-}
-
-.property .read-more {
-  
-}
-
-.property .read-more:hover {
-  background-color: var(--primary-text);
-  color: var(--primary-color);
-  transition: all 0.2 ease;
 }
 
 .property p:nth-child(2) {
