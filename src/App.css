@@ -303,6 +303,7 @@ button:hover {
 
 /* Single Property Details */
 .single-container {
+  margin-top: 30px;
   width: 100%;
   display: flex;
   padding: 10px;

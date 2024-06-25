@@ -6,6 +6,7 @@ const SingleProperty = () => {
   const { id } = useParams();
   const [properties, setProperties] = useState([]);
   const [property, setProperty] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -23,11 +24,16 @@ const SingleProperty = () => {
     fetchData();
   }, []);
 
+  const handleBackButton = () => {
+    navigate(-1);
+  }
+
   if (!property) {
     return <div>Loading...</div>;
   }
   return (
     <>
+        <p className='back-button' onClick={handleBackButton}><i className="fa-solid fa-arrow-left"></i> Back</p>
         <div className='single-container'>
             <img src={property.image} alt="" className='single-image' />
             <div className="single-property-details">

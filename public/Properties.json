@@ -13,7 +13,7 @@
         "wifi": true,
         "familyFriendly": true,
         "offStreetParking": true,
-        "image": "/images/SeasideRetreat.webp",
+        "image": "/images/SeasideVilla.webp",
         "description": "Welcome to \"Seaside Retreat\" nestled in the serene locale of Wellington, offering a tranquil escape from the hustle and bustle of urban life. Priced at a steal for $320.00 per night, this charming abode boasts 2 snug bedrooms and 2 immaculate bathrooms, ensuring comfort and convenience for its lucky inhabitants.<br></br>Picture yourself unwinding in the cozy ambiance of this retreat, where every corner exudes warmth and relaxation. Whether you're curling up with a book by the fireplace or savoring a cup of tea on the quaint porch, each moment spent here promises to be nothing short of blissful."
     },
     {
@@ -30,7 +30,7 @@
         "wifi": true,
         "familyFriendly": true,
         "offStreetParking": true,
-        "image": "/images/MountainView.webp",
+        "image": "/images/MountainRetreat.webp",
         "description": "Welcome to \"Mountain View\" nestled in the serene locale of Queenstown, offering a tranquil escape from the hustle and bustle of urban life. Priced at a steal for $450.00 per night, this charming abode boasts 3 snug bedrooms and 2 immaculate bathrooms, ensuring comfort and convenience for its lucky inhabitants.<br></br>Picture yourself unwinding in the cozy ambiance of this home, where every corner exudes warmth and relaxation. Whether you're curling up with a book by the fireplace or savoring a cup of tea on the quaint porch, each moment spent here promises to be nothing short of blissful."
     },
     {
@@ -47,7 +47,7 @@
         "wifi": true,
         "familyFriendly": true,
         "offStreetParking": true,
-        "image": "/images/LakefrontParadise.webp",
+        "image": "/images/LakesideLodge.webp",
         "description": "Welcome to \"Lakefront Paradise\" nestled in the serene locale of Rotorua, offering a tranquil escape from the hustle and bustle of urban life. Priced at a steal for $300.00 per night, this charming abode boasts 2 snug bedrooms and 1 immaculate bathroom, ensuring comfort and convenience for its lucky inhabitants.<br></br>Picture yourself unwinding in the cozy ambiance of this paradise, where every corner exudes warmth and relaxation. Whether you're curling up with a book by the fireplace or savoring a cup of tea on the quaint porch, each moment spent here promises to be nothing short of blissful."
     },
     {
@@ -81,7 +81,7 @@
         "wifi": true,
         "familyFriendly": true,
         "offStreetParking": true,
-        "image": "/images/CozyCottage.webp",
+        "image": "/images/cottage.webp",
         "description": "Welcome to \"Cozy Cottage\" nestled in the serene locale of Christchurch, offering a tranquil escape from the hustle and bustle of urban life. Priced at a steal for $280.00 per night, this charming abode boasts 2 snug bedrooms and 1 immaculate bathroom, ensuring comfort and convenience for its lucky inhabitants.<br></br>Picture yourself unwinding in the cozy ambiance of this cottage, where every corner exudes warmth and relaxation. Whether you're curling up with a book by the fireplace or savoring a cup of tea on the quaint porch, each moment spent here promises to be nothing short of blissful."
     },
     {
@@ -98,7 +98,7 @@
         "wifi": true,
         "familyFriendly": true,
         "offStreetParking": true,
-        "image": "/images/BeachfrontBliss.webp",
+        "image": "/images/BeachfrontBungalow.webp",
         "description": "Welcome to \"Beachfront Bliss\" nestled in the serene locale of Tauranga, offering a tranquil escape from the hustle and bustle of urban life. Priced at a steal for $400.00 per night, this charming abode boasts 3 snug bedrooms and 2 immaculate bathrooms, ensuring comfort and convenience for its lucky inhabitants.<br></br>Picture yourself unwinding in the cozy ambiance of this blissful home, where every corner exudes warmth and relaxation. Whether you're curling up with a book by the fireplace or savoring a cup of tea on the quaint porch, each moment spent here promises to be nothing short of blissful."
     },
     {
@@ -132,7 +132,7 @@
         "wifi": true,
         "familyFriendly": true,
         "offStreetParking": true,
-        "image": "/images/CityCentral.webp",
+        "image": "/images/CityApartment.webp",
         "description": "Welcome to \"City Central\" nestled in the serene locale of Dunedin, offering a tranquil escape from the hustle and bustle of urban life. Priced at a steal for $220.00 per night, this charming abode boasts 1 snug bedroom and 1 immaculate bathroom, ensuring comfort and convenience for its lucky inhabitants.<br></br>Picture yourself unwinding in the cozy ambiance of this central location, where every corner exudes warmth and relaxation. Whether you're curling up with a book by the fireplace or savoring a cup of tea on the quaint porch, each moment spent here promises to be nothing short of blissful."
     },
     {
@@ -149,7 +149,7 @@
         "wifi": true,
         "familyFriendly": true,
         "offStreetParking": true,
-        "image": "/images/CountrysideEscape.webp",
+        "image": "/images/CountryManor.webp",
         "description": "Welcome to \"Countryside Escape\" nestled in the serene locale of Nelson, offering a tranquil escape from the hustle and bustle of urban life. Priced at a steal for $350.00 per night, this charming abode boasts 3 snug bedrooms and 2 immaculate bathrooms, ensuring comfort and convenience for its lucky inhabitants.<br></br>Picture yourself unwinding in the cozy ambiance of this escape, where every corner exudes warmth and relaxation. Whether you're curling up with a book by the fireplace or savoring a cup of tea on the quaint porch, each moment spent here promises to be nothing short of blissful."
     },
     {
@@ -166,7 +166,7 @@
         "wifi": true,
         "familyFriendly": true,
         "offStreetParking": true,
-        "image": "/images/HarbourView.webp",
+        "image": "/images/HarbourViewCondo.webp",
         "description": "Welcome to \"Harbour View\" nestled in the serene locale of Napier, offering a tranquil escape from the hustle and bustle of urban life. Priced at a steal for $330.00 per night, this charming abode boasts 2 snug bedrooms and 1 immaculate bathroom, ensuring comfort and convenience for its lucky inhabitants.<br></br>Picture yourself unwinding in the cozy ambiance of this view, where every corner exudes warmth and relaxation. Whether you're curling up with a book by the fireplace or savoring a cup of tea on the quaint porch, each moment spent here promises to be nothing short of blissful."
     },
     {
@@ -183,7 +183,7 @@
         "wifi": true,
         "familyFriendly": true,
         "offStreetParking": true,
-        "image": "/images/RiversideVilla.webp",
+        "image": "/images/SeasideVilla.webp",
         "description": "Welcome to \"Riverside Villa\" nestled in the serene locale of Invercargill, offering a tranquil escape from the hustle and bustle of urban life. Priced at a steal for $280.00 per night, this charming abode boasts 3 snug bedrooms and 2 immaculate bathrooms, ensuring comfort and convenience for its lucky inhabitants.<br></br>Picture yourself unwinding in the cozy ambiance of this villa, where every corner exudes warmth and relaxation. Whether you're curling up with a book by the fireplace or savoring a cup of tea on the quaint porch, each moment spent here promises to be nothing short of blissful."
     },
     {
@@ -200,7 +200,7 @@
         "wifi": true,
         "familyFriendly": true,
         "offStreetParking": true,
-        "image": "/images/HilltopHaven.webp",
+        "image": "/images/HillsideCottage.webp",
         "description": "Welcome to \"Hilltop Haven\" nestled in the serene locale of Palmerston North, offering a tranquil escape from the hustle and bustle of urban life. Priced at a steal for $340.00 per night, this charming abode boasts 4 snug bedrooms and 3 immaculate bathrooms, ensuring comfort and convenience for its lucky inhabitants.<br></br>Picture yourself unwinding in the cozy ambiance of this haven, where every corner exudes warmth and relaxation. Whether you're curling up with a book by the fireplace or savoring a cup of tea on the quaint porch, each moment spent here promises to be nothing short of blissful."
     },
     {
@@ -217,7 +217,7 @@
         "wifi": true,
         "familyFriendly": true,
         "offStreetParking": true,
-        "image": "/images/LakesideLodge.webp",
+        "image": "/images/LakesideCabin.webp",
         "description": "Welcome to \"Lakeside Lodge\" nestled in the serene locale of Taupo, offering a tranquil escape from the hustle and bustle of urban life. Priced at a steal for $370.00 per night, this charming abode boasts 3 snug bedrooms and 2 immaculate bathrooms, ensuring comfort and convenience for its lucky inhabitants.<br></br>Picture yourself unwinding in the cozy ambiance of this lodge, where every corner exudes warmth and relaxation. Whether you're curling up with a book by the fireplace or savoring a cup of tea on the quaint porch, each moment spent here promises to be nothing short of blissful."
     },
     {
@@ -234,7 +234,7 @@
         "wifi": true,
         "familyFriendly": true,
         "offStreetParking": true,
-        "image": "/images/GardenApartment.webp",
+        "image": "/images/CityApartment.webp",
         "description": "Welcome to \"Garden Apartment\" nestled in the serene locale of New Plymouth, offering a tranquil escape from the hustle and bustle of urban life. Priced at a steal for $220.00 per night, this charming abode boasts 1 snug bedroom and 1 immaculate bathroom, ensuring comfort and convenience for its lucky inhabitants.<br></br>Picture yourself unwinding in the cozy ambiance of this apartment, where every corner exudes warmth and relaxation. Whether you're curling up with a book by the fireplace or savoring a cup of tea on the quaint porch, each moment spent here promises to be nothing short of blissful."
     },
     {
@@ -251,7 +251,7 @@
         "wifi": true,
         "familyFriendly": true,
         "offStreetParking": true,
-        "image": "/images/HistoricHome.webp",
+        "image": "/images/HistoricMansion.webp",
         "description": "Welcome to \"Historic Home\" nestled in the serene locale of Whanganui, offering a tranquil escape from the hustle and bustle of urban life. Priced at a steal for $300.00 per night, this charming abode boasts 2 snug bedrooms and 1 immaculate bathroom, ensuring comfort and convenience for its lucky inhabitants.<br></br>Picture yourself unwinding in the cozy ambiance of this historic home, where every corner exudes warmth and relaxation. Whether you're curling up with a book by the fireplace or savoring a cup of tea on the quaint porch, each moment spent here promises to be nothing short of blissful."
     },
     {
@@ -285,7 +285,7 @@
         "wifi": true,
         "familyFriendly": true,
         "offStreetParking": true,
-        "image": "/images/LuxuryPenthouse.webp",
+        "image": "/images/CityApartment.webp",
         "description": "Welcome to \"Luxury Penthouse\" nestled in the serene locale of Wellington, offering a tranquil escape from the hustle and bustle of urban life. Priced at a steal for $500.00 per night, this charming abode boasts 4 snug bedrooms and 3 immaculate bathrooms, ensuring comfort and convenience for its lucky inhabitants.<br></br>Picture yourself unwinding in the cozy ambiance of this penthouse, where every corner exudes warmth and relaxation. Whether you're curling up with a book by the fireplace or savoring a cup of tea on the quaint porch, each moment spent here promises to be nothing short of blissful."
     },
     {
@@ -302,7 +302,7 @@
         "wifi": true,
         "familyFriendly": true,
         "offStreetParking": true,
-        "image": "/images/CharmingBungalow.webp",
+        "image": "/images/BeachfrontBungalow.webp",
         "description": "Welcome to \"Charming Bungalow\" nestled in the serene locale of Blenheim, offering a tranquil escape from the hustle and bustle of urban life. Priced at a steal for $280.00 per night, this charming abode boasts 2 snug bedrooms and 1 immaculate bathroom, ensuring comfort and convenience for its lucky inhabitants.<br></br>Picture yourself unwinding in the cozy ambiance of this bungalow, where every corner exudes warmth and relaxation. Whether you're curling up with a book by the fireplace or savoring a cup of tea on the quaint porch, each moment spent here promises to be nothing short of blissful."
     },
     {
