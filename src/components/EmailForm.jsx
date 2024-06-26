@@ -23,6 +23,7 @@ const EmailForm = () => {
         message: message,
         to_email: property.email,
         property_name: property.name,
+        property_id: property.id
       };
 
       await emailjs.send(
