@@ -115,6 +115,7 @@ const SearchForm = () => {
           placeholderText="Select Start Date"
           required
           minDate={new Date()}
+          onKeyDown={(e) => e.preventDefault()}
         />
       </div>
 
@@ -128,6 +129,7 @@ const SearchForm = () => {
           placeholderText="Select End Date"
           required
           minDate={formData.startDate || new Date()}
+          onKeyDown={(e) => e.preventDefault()}
         />
       </div>
 
