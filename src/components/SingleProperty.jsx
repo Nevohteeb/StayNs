@@ -28,6 +28,10 @@ const SingleProperty = () => {
     navigate(-1);
   }
 
+  const handleEnquireNow = () => {
+    navigate('/enquire', { state: { property } });
+  }
+
   if (!property) {
     return <div>Loading...</div>;
   }
@@ -37,18 +41,18 @@ const SingleProperty = () => {
         <div className='single-container'>
             <img src={property.image} alt="" className='single-image' />
             <div className="single-property-details">
-                <p id="enquire"><i class="fa-solid fa-envelope"></i> Enquire Now</p>
+                <p id="enquire" onClick={handleEnquireNow}><i className="fa-solid fa-envelope"></i> Enquire Now</p>
                 <h1>{property.name}</h1>
                 <p className='location-text'>{property.location}</p>
                 <p className='sub-title'>${property.price.toFixed(2)} NZD per night</p>
                 <p dangerouslySetInnerHTML={{__html: property.description}}/>
                 <p className='sub-title'>Ammenities:</p>
                 <div className='single-property-ammenities'>
-                    <p><i class="fa-solid fa-bed"></i>{property.bedrooms} </p>
-                    <p><i class="fa-solid fa-bath"></i>{property.bathrooms}</p>
-                    {property.wifi && <p><i class="fa-solid fa-wifi"></i><span>Wifi</span></p>}
-                    {property.familyFriendly && <p><i class="fa-solid fa-baby"></i> Family Friendly</p>}
-                    {property.offStreetParking && <p><i class="fa-solid fa-car"></i> Off Street Parking</p>}
+                    <p><i className="fa-solid fa-bed"></i>{property.bedrooms} </p>
+                    <p><i className="fa-solid fa-bath"></i>{property.bathrooms}</p>
+                    {property.wifi && <p><i className="fa-solid fa-wifi"></i><span>Wifi</span></p>}
+                    {property.familyFriendly && <p><i className="fa-solid fa-baby"></i> Family Friendly</p>}
+                    {property.offStreetParking && <p><i className="fa-solid fa-car"></i> Off Street Parking</p>}
                 </div>    
             </div> 
         </div>

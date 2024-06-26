@@ -175,7 +175,8 @@ form {
 }
 
 select,
-input {
+input,
+textarea {
   width: 240px;
   margin: 10px 0;
   padding: 10px;
@@ -184,6 +185,7 @@ input {
   background-color: var(--background-color);
   color: var(--primary-text);
   font-size: 16px;
+  font-family: "Lato", sans-serif;
 }
 
 label {
@@ -380,6 +382,12 @@ button:hover {
 .single-property-ammenities p {
   font-size: 1.125em;
   font-weight: 300;
+}
+
+/* Email Form */
+.email-form-container h2 {
+  color: var(--primary-text);
+  text-align: center;
 }
 
 /* Media Querries */

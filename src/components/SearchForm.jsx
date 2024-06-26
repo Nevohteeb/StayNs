@@ -19,7 +19,6 @@ const SearchForm = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get('/Properties.json');
-        console.log('Fetched data:', response.data);  // Debug log
         setProperties(response.data);
       } catch (error) {
         console.error('Error fetching the properties data:', error);
