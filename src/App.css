@@ -11,23 +11,7 @@
 
 /* Target the scrollbar on WebKit (Safari, Chrome, Opera) */
 ::-webkit-scrollbar {
-  width: 5px; /* Width of the scrollbar */
-}
-
-/* Track (the area on which the scrollbar is rendered) */
-::-webkit-scrollbar-track {
-  background: #f1f1f1; /* Color of the track */
-}
-
-/* Handle (the draggable part of the scrollbar) */
-::-webkit-scrollbar-thumb {
-  background: var(--primary-color); /* Color of the handle */
-  border-radius: 5px; /* Rounded corners on the handle */
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Darker color when hovering */
+  display: none;
 }
 
 /* Reset some basic styles */
@@ -55,6 +39,7 @@ p {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  overflow-y: scroll;
 }
 
 .main-container {
