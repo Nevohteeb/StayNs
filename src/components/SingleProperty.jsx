@@ -1,12 +1,14 @@
 import {useState, useEffect} from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import axios from 'axios';
+import Loading from './Loading';
 
 const SingleProperty = () => {
   const { id } = useParams();
   const [properties, setProperties] = useState([]);
   const [property, setProperty] = useState(null);
   const navigate = useNavigate();
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -16,6 +18,7 @@ const SingleProperty = () => {
         const numericId = Number(id);
         const foundProperty = response.data.find(p => p.id === numericId);
         setProperty(foundProperty);
+        setLoading(false);
       } catch (error) {
         console.error('Error fetching the properties data:', error);
       }
@@ -30,6 +33,10 @@ const SingleProperty = () => {
 
   const handleEnquireNow = () => {
     navigate('/enquire', { state: { property } });
+  }
+
+  if (loading) {
+    return <Loading/>
   }
 
   if (!property) {

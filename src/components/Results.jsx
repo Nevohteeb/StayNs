@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import Loading from './Loading';
 
 const Results = () => {
   const location = useLocation();
   const { formData } = location.state || {};
   const [properties, setProperties] = useState([]);
   const navigate = useNavigate();
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -37,6 +39,7 @@ const Results = () => {
         });
 
         setProperties(filteredProperties);
+        setLoading(false)
       } catch (error) {
         console.error('Error fetching the properties data:', error);
       }
@@ -52,6 +55,10 @@ const Results = () => {
   const handleReadMore = (e) => {
     const propertyId = e.target.getAttribute('data-id');
     navigate(`/property/${propertyId}`);
+  }
+
+  if (loading) {
+    return <Loading/>
   }
 
   return (

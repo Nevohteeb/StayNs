@@ -114,6 +114,7 @@ const SearchForm = () => {
           className="full-width-select"
           placeholderText="Select Start Date"
           required
+          minDate={new Date()}
         />
       </div>
 
@@ -126,6 +127,7 @@ const SearchForm = () => {
           className="full-width-select"
           placeholderText="Select End Date"
           required
+          minDate={formData.startDate || new Date()}
         />
       </div>
 
