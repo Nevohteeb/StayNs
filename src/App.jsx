@@ -17,15 +17,17 @@ function App() {
   return (
     <HashRouter>
       <Header/>
-      <div className='main-container'>
-        <Routes>
-          {/* Set up individual routes */}
-          <Route exact path='/' element={<Homepage/>} />
-          <Route exact path='/search' element={<SearchForm/>} />
-          <Route exact path='/results' element={<Results/>} />
-          <Route path="/property/:id" element={<SingleProperty />} />
-          <Route path="/enquire" element={<EmailForm />} />
-        </Routes>
+      <div className="background-container">
+        <div className='main-container'>
+          <Routes>
+            {/* Set up individual routes */}
+            <Route exact path='/' element={<Homepage/>} />
+            <Route exact path='/search' element={<SearchForm/>} />
+            <Route exact path='/results' element={<Results/>} />
+            <Route path="/property/:id" element={<SingleProperty />} />
+            <Route path="/enquire" element={<EmailForm />} />
+          </Routes>
+        </div>
       </div>
       <Footer/>
       <Toaster/>
