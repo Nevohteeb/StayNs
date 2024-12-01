@@ -2,6 +2,7 @@
 
 
 # 📌 StayNZ - Mock Accomodation Finder
+https://stay-ns.vercel.app/
 
 AccomFinder is a simple and efficient accommodation search tool powered by local JSON data. Perfect for small-scale projects or mockups, it enables users to browse and filter accommodations effortlessly.
 
