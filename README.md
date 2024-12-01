@@ -1,3 +1,6 @@
+![Mockup](public/img/mock.png)
+
+
 # 📌 StayNZ - Mock Accomodation Finder
 
 AccomFinder is a simple and efficient accommodation search tool powered by local JSON data. Perfect for small-scale projects or mockups, it enables users to browse and filter accommodations effortlessly.
