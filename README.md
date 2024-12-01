@@ -1,4 +1,4 @@
-![Mockup](public/img/mock.png)
+![Mockup](public/images/mock.png)
 
 
 # 📌 StayNZ - Mock Accomodation Finder
